@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rasm, nom va tavsif misoli</title>
+  <style>
+    /* Bosh konteyner */
+    .card {
+      width: 320px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      background: #fff;
+      font-family: Inter, "Segoe UI", Roboto, sans-serif;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    }
+
+    /* Rasm joyi */
+    .card .image {
+      width: 100%;
+      height: 200px;
+      display: block;
+      object-fit: cover; /* rasmni konteynerga moslashtiradi */
+      background: #eee;
+    }
+
+    /* Ichki matn konteyneri */
+    .card .content {
+      padding: 16px;
+    }
+
+    .card .title {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      line-height: 1.2;
+      color: #111827;
+      font-weight: 600;
+    }
+
+    .card .description {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #475569;
+    }
+
+    /* Kichik ekranda kenglikni moslashtirish */
+    @media (max-width: 380px) {
+      .card { width: 100%; }
+      .card .image { height: 160px; }
+    }
+  </style>
+</head>
+<body style="display:flex; align-items:center; justify-content:center; min-height:100vh; background:#f6f7fb; margin:0; padding:20px;">
+
+  <div class="card">
+    <!-- Rasm: src o'rniga o'zingizning rasm manzilingizni qo'ying -->
+    <img class="image" src="https://via.placeholder.com/800x500.png?text=Rasm+joyi" alt="Rasm tavsifi">
+
+    <div class="content">
+      <h3 class="title">Rasmning nomi</h3>
+      <p class="description">
+        Bu yerda rasm haqida qisqacha tavsif yoziladi. Masalan, rasm qayerda olingani, muhim jihatlari yoki qisqacha kontekst bo'lishi mumkin.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

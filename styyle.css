@@ -1,0 +1,135 @@
+body {
+  margin: 0px; /* Butun sahifa chetlaridan tashqi bo‘sh joy (90px).*/
+  font-family: Arial, sans-serif; /* Sahifadagi matn Arial yoki unga o‘xshash shriftlarda ko‘rinadi */
+}
+
+.navbar {
+  background-color: #333; /* Navbar orqa fon rangi – to‘q kulrang (qora tomon) */
+  color: white; /* Navbar ichidagi matn rangi – oq */
+  display: flex; /* Flexbox qo‘llash – elementlarni yonma-yon joylashtirish uchun */
+  justify-content: space-between; /* Chapdagi logo va o‘ngdagi linklarni ikki tomonga yoyib beradi */
+  align-items: center; /* Elementlarni vertikal bo‘yicha markazga joylashtiradi */
+  padding: 10px 20px; /* Ichki bo‘sh joy: yuqori/pastdan 10px, chap/o‘ngdan 20px */
+}
+
+.navbar .logo {
+  font-size: 20px; /* Logotip matni hajmi */
+  font-weight: bold; /* Logotip matnini qalin qilib yozadi */
+}
+
+.navbar .nav-links {
+  list-style: none; /* Ul (ro‘yxat) belgilari (nuqtalar)ni olib tashlaydi */
+  display: flex; /* Havolalarni yonma-yon chiqishi uchun */
+  margin: 0; /* Ro‘yxatning tashqi bo‘sh joyini olib tashlaydi */
+  padding: 0; /* Ro‘yxatning ichki bo‘sh joyini olib tashlaydi */
+}
+
+.navbar .nav-links li {
+  margin-left: 20px; /* Har bir menyu elementi orasiga 20px masofa qo‘yadi */
+}
+
+.navbar .nav-links a {
+  text-decoration: none; /* Link ostidagi chiziqni olib tashlaydi */
+  color: white; /* Link matni rangi oq bo‘ladi */
+  transition: 0.3s; /* Hover effekti (rang o‘zgarishi) 0.3 soniyada sekinroq amalga oshadi */
+}
+
+.navbar .nav-links a:hover {
+  color: #ffcc00; /* Sichqoncha olib borilganda havola rangi sariq (#ffcc00) bo‘ladi */
+}
+
+
+
+
+/* Asosiy qismni sozlash */
+.content {
+  text-align: center;   /* Matnni markazga joylashtiradi */
+  padding: 50px 20px;   /* Yuqori-pastdan 50px, chap-o‘ngdan 20px ichki bo‘sh joy qo‘shadi */
+}
+
+.content h1 {
+  color: #333;          /* Sarlavha (h1) matni rangi – kulrang */
+}
+
+.content p {
+  font-size: 18px;      /* Oddiy matn hajmini 18px qiladi */
+  color: #555;          /* Matn rangini biroz ochroq kulrang qiladi */
+}
+
+.content img {
+  margin-top: 20px;     /* Rasmning yuqorisiga 20px bo‘sh joy qo‘shadi */
+  border-radius: 10px;  /* Rasm burchaklarini yumaloqlashtiradi (10px radius bilan) */
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2); 
+  /* Rasmga soyali effekt beradi: 
+     0px – chap/o‘ng siljish yo‘q,
+     4px – pastga tushish,
+     8px – soya tarqalishi,
+     rgba(0,0,0,0.2) – qora rang soya 20% shaffoflikda */
+}
+
+
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  background: #fff;
+  transition: transform 0.3s;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card.info {
+  padding: 15px;
+
+}
+
+.card.info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card.info p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+.p{
+    width: 100%;
+    height: 50px;
+    font-size: 10px;
+}
+body{
+    background-color: pink;
+    color: black;
+}
